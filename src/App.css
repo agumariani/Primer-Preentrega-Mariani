@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  margin: 0;
+  background-image: url('./images/61802.jpg');
+}
+
+.nav-bar{
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar div{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.item-list{
+  color: green;
+}
