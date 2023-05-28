@@ -57,5 +57,4 @@ export const ItemDetail = ({id, nombre, img, categoria, descripcion, precio, sto
         </article>
         
     )
-    console.log(`${nombre}, ${categoria}`)
 }
