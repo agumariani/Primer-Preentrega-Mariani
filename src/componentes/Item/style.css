@@ -1,0 +1,17 @@
+.card{
+    background-image: linear-gradient( #a8dba8, seashell, seashell);    
+    width: 30%;
+    /* border: 2px solid black ; */
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.cardImg{
+    width: 50%;
+    object-fit: contain;
+    mix-blend-mode:multiply;
+}
+
+.cardFooter{
+    margin-bottom: 20px;
+}

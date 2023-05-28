@@ -39,6 +39,7 @@
 
 body{
   margin: 0;
+  height: ;
   background-image: url('./images/61802.jpg');
 }
 
@@ -56,6 +57,12 @@ body{
   justify-content: space-between;
 }
 
-.item-list{
+.itemList{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: 20px;
+
   color: green;
 }
