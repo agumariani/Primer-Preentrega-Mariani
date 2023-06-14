@@ -6,10 +6,10 @@ import { CartContext } from "../../Context/CartContext"
 export const ItemDetail = ({id, nombre, img, categoria, descripcion, precio, stock}) => {    
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-    const addItem = useContext(CartContext)
+    const { addItem } = useContext(CartContext)
 
 
-    const handdleOnAdd =(quantity)=>{
+    const handdleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
 
         const item={
@@ -49,7 +49,7 @@ export const ItemDetail = ({id, nombre, img, categoria, descripcion, precio, sto
                             <Link to='/cart' className="option">Terminar Compra</Link>
                         </div>
                     ):(
-                        <Counter initial={1} stock={stock} onAdd={(handdleOnAdd)}/>
+                        <Counter initial={1} stock={stock} onAdd={handdleOnAdd}/>
                     )
                 }
                 

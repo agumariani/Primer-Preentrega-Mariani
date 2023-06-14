@@ -1,0 +1,31 @@
+.nav-bar{
+    border-bottom: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-bottom: 3px;
+  }
+
+  .option, .activeOption{
+    display: flex;
+    padding: 3px;
+    text-decoration: none;
+    border: solid black 1.5px;
+    border-radius: 5px;
+    background-image: linear-gradient( #a8dba8, seashell, seashell);    
+    height: 30px;
+    align-items: center;
+  }
+
+
+  .logo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+  }

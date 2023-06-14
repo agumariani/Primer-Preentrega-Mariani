@@ -39,23 +39,11 @@
 
 body{
   margin: 0;
-  height: ;
-  background-image: url('./images/61802.jpg');
+  height: 100vh;
+  background-image: linear-gradient(#a8dba8, seashell);    
 }
 
-.nav-bar{
-  border: solid black 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.nav-bar div{
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-}
 
 .itemList{
   display: flex;

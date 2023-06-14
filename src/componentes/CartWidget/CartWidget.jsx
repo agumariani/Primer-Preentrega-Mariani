@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import cart from './assets/cart.svg'
+import { CartContext } from '../../Context/CartContext'
+import { NavLink } from 'react-router-dom'
 
 export const CartWidget = () => {
-return(
 
+    const {totalQuantity} = useContext(CartContext)
 
-    <div>
-        <img src={cart} alt='Cart-Icon'/>
-        0
-    </div>
+    return(
 
-)
+        <NavLink to='/cart' className='cartWidget' style={{display:totalQuantity()>0?'block':'none'}}>
+            <img src={cart} alt='Cart-Icon'/>
+            {totalQuantity()}
+        </NavLink>
+
+    )
 }
+
+
+
+
+// 
+// 

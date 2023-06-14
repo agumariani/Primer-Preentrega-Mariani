@@ -6,6 +6,10 @@
     margin: 5px;
 }
 
+h2{
+    font-size: 100%;
+}
+
 .cardImg{
     width: 50%;
     object-fit: contain;

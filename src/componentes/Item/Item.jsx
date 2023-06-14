@@ -18,7 +18,7 @@ export const Item = ({ id, nombre, precio, stock, img }) => {
                     Precio = ${precio}
                 </p>
                 <p>
-                    Stock dispocible = {stock}
+                    Stock disponible = {stock}
                 </p>
             </section>
             <footer className="cardFooter">
