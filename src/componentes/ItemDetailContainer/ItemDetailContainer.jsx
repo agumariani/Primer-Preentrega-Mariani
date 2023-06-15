@@ -38,7 +38,7 @@ export const ItemDetailContainer = ()=> {
         return <Spinner/>
     }
 
-    if(products){
+    if(product){
         return (
             <ItemDetail {...product}/>
         )
