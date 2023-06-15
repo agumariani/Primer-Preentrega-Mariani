@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import { getProductsById } from "../../catalogo/mockData"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
+import Spinner from "../../Spinner/Spinner"
 
 
 
@@ -34,8 +34,16 @@ export const ItemDetailContainer = ()=> {
     }, [itemId])
     
 
-    return (
-        <ItemDetail {...product}/>
-    )
+    if(loading){
+        return <Spinner/>
+    }
+
+    if(orderId){
+        return (
+            <ItemDetail {...product}/>
+        )
+    }
+
+    
 }
 

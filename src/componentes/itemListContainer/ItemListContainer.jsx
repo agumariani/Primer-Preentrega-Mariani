@@ -3,6 +3,8 @@ import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
+import Spinner from "../../Spinner/Spinner";
+
 
 export const ItemListContainer = ({ greeting }) => {
 
@@ -35,13 +37,24 @@ export const ItemListContainer = ({ greeting }) => {
                 setLoading(false)
             })
         },[categoriaId])
-    return (
 
-        <div className="item-list">
-            <h1>{greeting}</h1>
-            <ItemList products={products}/>
-        </div>
-    )
+
+
+
+        if(loading){
+            return <Spinner/>
+        }
+    
+        if(orderId){
+            return (
+
+                <div className="item-list">
+                    <h1>{greeting}</h1>
+                    <ItemList products={products}/>
+                </div>
+            )
+        }
+    
 
 
 }
