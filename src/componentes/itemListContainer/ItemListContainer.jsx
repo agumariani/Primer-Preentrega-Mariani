@@ -45,7 +45,7 @@ export const ItemListContainer = ({ greeting }) => {
             return <Spinner/>
         }
     
-        if(orderId){
+        if(products){
             return (
 
                 <div className="item-list">
