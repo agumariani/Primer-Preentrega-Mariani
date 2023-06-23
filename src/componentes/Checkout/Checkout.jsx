@@ -3,7 +3,7 @@ import { collection, query, where, getDocs, writeBatch, documentId, Timestamp, a
 import {db} from '../../services/firebase/firebaseConfig'
 import { CartContext } from '../../Context/CartContext';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
-
+import './checkout.css'
 
 export const Checkout = () => {
     
@@ -49,13 +49,14 @@ export const Checkout = () => {
             if(outOfStock.length===0){
                 await batch.commit()
 
-                const orderRef=collection(db,'orders')
+                const orderRef=collection(db,'pedidos')
 
                 const orderAdded= await addDoc(orderRef,objOrder)
 
                 setOrderId(orderAdded.id)
                 clearCart()
-            }else{
+            }
+            else{
                 console.error('Hay productos que se encuentran fuera de stock')
             }
         }catch(error){

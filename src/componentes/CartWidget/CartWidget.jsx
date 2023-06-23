@@ -9,7 +9,7 @@ export const CartWidget = () => {
 
     return(
 
-        <NavLink to='/cart' className='cartWidget' style={{display:totalQuantity()>0?'block':'none'}}>
+        <NavLink to='/cart' className='cartWidget' style={{display:totalQuantity()>=0?'block':'none'}}>
             <img src={cart} alt='Cart-Icon'/>
             {totalQuantity()}
         </NavLink>
@@ -18,7 +18,3 @@ export const CartWidget = () => {
 }
 
 
-
-
-// 
-// 

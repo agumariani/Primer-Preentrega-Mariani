@@ -20,8 +20,8 @@ export const Counter = ({ stock, initial, onAdd }) => {
 
 
     return (
-        <div>
-            <div>
+        <div className='container'>
+            <div className='botonera'>
                 <button className='buttonDecrement' onClick={decrement}>-</button>
                 <h4 className='quantity'>{quantity}</h4>
                 <button className='buttonIncrement' onClick={increment}>+</button>

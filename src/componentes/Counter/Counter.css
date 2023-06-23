@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonera {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}

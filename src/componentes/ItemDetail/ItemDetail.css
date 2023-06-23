@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient( #a8dba8, seashell, seashell);    
+    width: 40%;
+    /* border: 2px solid black ; */
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.nombreProducto{
+    font-size: 4em;
+}
+
+.itemImg{
+    width: 40%;
+    object-fit: contain;
+    mix-blend-mode:multiply;
+}
+
+.footerOpciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    margin-bottom: 20px;
+}
